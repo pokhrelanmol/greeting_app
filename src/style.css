@@ -1,23 +1,109 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-/* DYNAMIC GREETING USING REACT */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-.greeting {
-  color: rgb(8, 8, 8);
+* {
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* CSS FOR WEB SERIES APP */
+.heading {
+
   font-family: "Dancing Script", cursive;
-  text-align: center;
-  font-size: xx-large;
-  text-shadow: 1px 2px 5px #000;
-  background-color: burlywood;
-  box-shadow: 0.2rem 0.2rem 0.1rem black;
+  margin-left: 40vw;
+  background-color: cadetblue;
   display: inline-block;
-
-  letter-spacing: 5px;
 }
-.main-div {
+.cards-wrapper {
   width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
   height: 100vh;
-  display: grid;
-  place-content: center;
-  background-color: rgb(27, 207, 207);
+  background-color: cornsilk;
 }
+.card {
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  text-align: center;
+  height: 50vh;
+}
+img {
+  margin-bottom: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card:hover{
+
+  transform: scale(1.1);
+}
+
+@media(max-width:700px) {
+  .cards-wrapper{
+    flex-direction:column;
+  }
+  .heading{
+    margin-bottom: 15rem;
+  }
+}
+/* CSSS FOR HOOKS INCREMENTOR */
+.wrapper {
+	display: grid;
+	place-content: center;
+	background: linear-gradient(  to left bottom, black, white);
+	height: 100vh;
+	width: 100%;
+}
+.number{
+  color: #eaeaea;
+  font-size:5rem;
+}
+.next-btn{
+  padding:.5rem;
+  color:white;
+  background:gray;
+}
+/* css for digital clock */
+.clock-div{
+  text-align: center;
+  padding-top: 25%;
+  width: 100%;
+  overflow-y: hidden;
+  height:100vh;
+  font-size:5rem;
+  background-color: rgb(57, 141, 99);
+}
+
+/* css for events */
+.event-div{
+  background-color:#0A81AB;
+  display: grid;
+  place-content:center;
+  height: 100vh;
+
+}
+.event-div > .event-btn{
+padding:10px;
+text-transform: uppercase;
+background: transparent;
+border:2px solid white;
+text-shadow: 0 2px 2px black;
+}
+
+
+/* css for forms component */
+form{
+ display:flex;
+ flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  height: 100vh;
+  background-color: aquamarine ;
+
+}
+.fName-input,.lName-input{
+  margin-bottom: 1rem;
+  padding: .5rem ;
+} 
+
+  

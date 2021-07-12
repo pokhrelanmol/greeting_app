@@ -1,12 +1,12 @@
-import React from "react";
-import GreetingMsg from './Greeting'
-
+import React from 'react';
 import './style.css';
-const App = () => {
-
-
+import Todos from './Todos';
+import './Todocss.css'
+const App = () =>  {
 	return (
-		<GreetingMsg />
-	)
-}
+		<>
+		<Todos/>
+		</>
+	);
+};
 export default App;
