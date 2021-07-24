@@ -1,0 +1,39 @@
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.info-message {
+  
+  position: absolute;
+  bottom: 15%;
+right: 0;
+  border: 1px solid silver;
+  padding: .4rem .8rem;
+  border-radius: 2rem;
+  color: blueviolet;
+  animation-name: messageBox;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+    transition: all 1s lineark;
+
+    
+}
+@keyframes messageBox {
+  0% {
+    bottom: 10%;
+  }
+  25% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 1%;
+  }
+  75% {
+    bottom: -6;
+  }
+  100% {
+    transition: all 4s ease-in-out;
+    bottom: -10%;
+  }
+}
